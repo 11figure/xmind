@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://www.runoob.com/jsp/jsp-syntax.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="hb-loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+  <meta property="qc:admins" content="465267610762567726375">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<title>JSP 语法 | 菜鸟教程</title>
+
+  <link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="canonical" href="http://www.runoob.com/jsp/jsp-syntax.html">
+<meta name="keywords" content="JSP 语法">
+<meta name="description" content="JSP 语法   本小节将会简单地介绍一下JSP开发中的基础语法。    脚本程序 脚本程序可以包含任意量的Java语句、变量、方法或表达式，只要它们在脚本语言中是有效的。  脚本程序的语法格式：     或者，您也可以编写与其等价的XML语句，就像下面这样：      代码片段    任何文本、HTML标签、JSP元素必须写在脚本程序的外面。  下面给出一个示例，同时也是本教程的第一个JSP示例：   Hello World  Hel..">
+		
+	<link rel="shortcut icon" href="http://www.runoob.com/favicon.ico" mce_href="http://www.runoob.com/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./JSP 语法 _ 菜鸟教程_files/style.css" type="text/css" media="all">	
+	<link rel="stylesheet" href="./JSP 语法 _ 菜鸟教程_files/font-awesome.min.css" media="all">	
+  <script src="./JSP 语法 _ 菜鸟教程_files/push.js"></script><script src="./JSP 语法 _ 菜鸟教程_files/hm.js"></script><script src="./JSP 语法 _ 菜鸟教程_files/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+     <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <![endif]-->
+  <link rel="apple-touch-icon" href="http://static.runoob.com/images/icon/mobile-icon.png">
+  <meta name="apple-mobile-web-app-title" content="菜鸟教程">
+<link rel="stylesheet" type="text/css" href="./JSP 语法 _ 菜鸟教程_files/prettify.css"><meta name="chromesniffer" id="chromesniffer_meta" content="{&quot;WordPress&quot;:-1,&quot;jQuery&quot;:&quot;1.8.1&quot;}"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body huaban_collector_injected="true">
+<!--  头部 -->
+<div class="container logo-search">
+
+  <div class="col search row-search-mobile">
+    <form action="http://www.runoob.com/jsp/index.php">
+      <input class="placeholder" value="搜索……" name="s" autocomplete="off">
+    </form>
+  </div>
+
+  <div class="row">
+    <div class="col logo">
+      <h1><a href="http://www.runoob.com/">菜鸟教程 -- 学的不仅是技术，更是梦想！</a></h1>
+    </div>
+        <div class="col right-list"> 
+    <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse" id="pull" style=""> <i class="fa fa-navicon"></i> </button>
+    </div>
+        <div class="col search search-desktop last">
+      <form action="http://www.runoob.com/" target="_blank">
+        <input class="placeholder" id="s" name="s" value="搜索……" autocomplete="off">
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<!-- 导航栏 -->
+<!-- 导航栏 -->
+<div class="container navigation">
+	<div class="row">
+		<div class="col nav">
+			<ul class="pc-nav">
+				<li><a href="http://www.runoob.com/">首页</a></li>
+				<li><a href="http://www.runoob.com/html/html-tutorial.html">HTML</a></li>
+				<li><a href="http://www.runoob.com/css/css-tutorial.html">CSS</a></li>
+				<li><a href="http://www.runoob.com/js/js-tutorial.html">JavaScript</a></li>
+				<li><a href="http://www.runoob.com/jquery/jquery-tutorial.html">jQuery</a></li>
+				<li><a href="http://www.runoob.com/bootstrap/bootstrap-tutorial.html">Bootstrap</a></li>
+				<li><a href="http://www.runoob.com/sql/sql-tutorial.html">SQL</a></li>
+				<li><a href="http://www.runoob.com/mysql/mysql-tutorial.html">MySQL</a></li>
+				<li><a href="http://www.runoob.com/php/php-tutorial.html">PHP</a></li>
+				<li><a href="http://www.runoob.com/python/python-tutorial.html">Python</a></li>
+				<li><a href="http://www.runoob.com/cprogramming/c-tutorial.html">C</a></li>
+				<li><a href="http://www.runoob.com/cplusplus/cpp-tutorial.html">C++</a></li>
+				<li><a href="http://www.runoob.com/csharp/csharp-tutorial.html">C#</a></li>
+				<li><a href="http://www.runoob.com/java/java-tutorial.html">Java</a></li>
+				<li><a href="http://www.runoob.com/ruby/ruby-tutorial.html">Ruby</a></li>
+				
+				<li><a href="http://www.runoob.com/sitemap">更多……</a></li>
+      		</ul>
+			<ul class="mobile-nav">
+				<li><a href="http://www.runoob.com/">首页</a></li>
+				<li><a href="http://www.runoob.com/html/html-tutorial.html">HTML</a></li>
+				<li><a href="http://www.runoob.com/css/css-tutorial.html">CSS</a></li>
+				<li><a href="http://www.runoob.com/js/js-tutorial.html">JavaScript</a></li>
+				<a href="javascript:void(0)" class="search-reveal">Search</a> 
+			</ul>
+			
+		</div>
+	</div>
+</div><!--  内容  -->
+<div class="container main">
+	<!-- 中间 -->
+	<div class="row">
+	
+<div class="col left-column">
+	<div class="tab">JSP 教程</div>
+	<div class="sidebar-box gallery-list">
+		<div class="design" id="leftcolumn">
+						<a target="_top" title="JSP 教程" href="http://www.runoob.com/jsp/jsp-tutorial.html">
+			JSP 教程			</a>
+						<a target="_top" title="JSP 简介" href="http://www.runoob.com/jsp/jsp-intro.html">
+			JSP 简介			</a>
+						<a target="_top" title="JSP 开发环境搭建" href="http://www.runoob.com/jsp/jsp-setup.html">
+			JSP 开发环境搭建			</a>
+			<a target="_top" title="Eclipse JSP/Servlet" href="http://www.runoob.com/jsp/eclipse-jsp.html"> Eclipse JSP/Servlet</a>			<a target="_top" title="JSP 结构" href="http://www.runoob.com/jsp/jsp-architecture.html">
+			JSP 结构			</a>
+						<a target="_top" title="JSP 生命周期" href="http://www.runoob.com/jsp/jsp-life-cycle.html">
+			JSP 生命周期			</a>
+						<a target="_top" title="JSP 语法" href="http://www.runoob.com/jsp/jsp-syntax.html" style="font-weight: bold; color: rgb(255, 255, 255); background-color: rgb(150, 185, 125);">
+			JSP 语法			</a>
+						<a target="_top" title="JSP 指令" href="http://www.runoob.com/jsp/jsp-directives.html">
+			JSP 指令			</a>
+						<a target="_top" title="JSP 动作元素" href="http://www.runoob.com/jsp/jsp-actions.html">
+			JSP 动作元素			</a>
+						<a target="_top" title="JSP 隐式对象" href="http://www.runoob.com/jsp/jsp-implicit-objects.html">
+			JSP 隐式对象			</a>
+						<a target="_top" title="JSP 客户端请求" href="http://www.runoob.com/jsp/jsp-client-request.html">
+			JSP 客户端请求			</a>
+						<a target="_top" title="JSP 服务器响应" href="http://www.runoob.com/jsp/jsp-server-response.html">
+			JSP 服务器响应			</a>
+						<a target="_top" title="JSP HTTP 状态码" href="http://www.runoob.com/jsp/jsp-http-status-codes.html">
+			JSP HTTP 状态码			</a>
+						<a target="_top" title="JSP 表单处理" href="http://www.runoob.com/jsp/jsp-form-processing.html">
+			JSP 表单处理			</a>
+						<a target="_top" title="JSP 过滤器" href="http://www.runoob.com/jsp/jsp-writing-filters.html">
+			JSP 过滤器			</a>
+						<a target="_top" title="JSP Cookie 处理" href="http://www.runoob.com/jsp/jsp-cookies.html">
+			JSP Cookie 处理			</a>
+						<a target="_top" title="JSP Session" href="http://www.runoob.com/jsp/jsp-session.html">
+			JSP Session			</a>
+						<a target="_top" title="JSP 文件上传" href="http://www.runoob.com/jsp/jsp-file-uploading.html">
+			JSP 文件上传			</a>
+						<a target="_top" title="JSP 日期处理" href="http://www.runoob.com/jsp/jsp-handling-date.html">
+			JSP 日期处理			</a>
+						<a target="_top" title="JSP 页面重定向" href="http://www.runoob.com/jsp/jsp-page-redirect.html">
+			JSP 页面重定向			</a>
+						<a target="_top" title="JSP 点击量统计" href="http://www.runoob.com/jsp/jsp-hits-counter.html">
+			JSP 点击量统计			</a>
+						<a target="_top" title="JSP 自动刷新" href="http://www.runoob.com/jsp/jsp-auto-refresh.html">
+			JSP 自动刷新			</a>
+						<a target="_top" title="JSP 发送邮件" href="http://www.runoob.com/jsp/jsp-sending-email.html">
+			JSP 发送邮件			</a>
+			<br><h2 class="left"><span class="left_h2">JSP 高级教程</span></h2>			<a target="_top" title="JSP 标准标签库（JSTL）" href="http://www.runoob.com/jsp/jsp-jstl.html">
+			JSP 标准标签库（JSTL）			</a>
+						<a target="_top" title="JSP 连接数据库" href="http://www.runoob.com/jsp/jsp-database-access.html">
+			JSP 连接数据库			</a>
+						<a target="_top" title="JSP XML 数据处理" href="http://www.runoob.com/jsp/jsp-xml-data.html">
+			JSP XML 数据处理			</a>
+						<a target="_top" title="JSP JavaBean" href="http://www.runoob.com/jsp/jsp-javabean.html">
+			JSP JavaBean			</a>
+						<a target="_top" title="JSP 自定义标签" href="http://www.runoob.com/jsp/jsp-custom-tags.html">
+			JSP 自定义标签			</a>
+						<a target="_top" title="JSP 表达式语言" href="http://www.runoob.com/jsp/jsp-expression-language.html">
+			JSP 表达式语言			</a>
+						<a target="_top" title="JSP 异常处理" href="http://www.runoob.com/jsp/jsp-exception-handling.html">
+			JSP 异常处理			</a>
+						<a target="_top" title="JSP 调试" href="http://www.runoob.com/jsp/jsp-debugging.html">
+			JSP 调试			</a>
+						<a target="_top" title="JSP 国际化" href="http://www.runoob.com/jsp/jsp-internationalization.html">
+			JSP 国际化			</a>
+				
+		</div>
+	</div>	
+</div>	<div class="col middle-column">
+		
+	
+	<div class="article">
+			<div class="article-heading-ad">
+		<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- 移动版 自动调整 -->
+		<ins class="adsbygoogle" style="display:inline-block;min-width:300px;max-width:970px;width:100%;height:90px" data-ad-client="ca-pub-5751451760833794" data-ad-slot="1691338467" data-ad-format="horizontal"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		</div>
+		<div class="previous-next-links">
+			<div class="previous-design-link">← <a href="http://www.runoob.com/jsp/jsp-life-cycle.html" rel="prev" title="JSP 生命周期">JSP 生命周期</a> </div>
+			<div class="next-design-link"><a href="http://www.runoob.com/jsp/jsp-directives.html" rel="next" title="JSP 指令">JSP 指令</a> →</div>
+		</div>
+		<div class="article-body">
+		
+			<div class="article-intro" id="content">
+			
+			<h1>JSP <span class="color_h1">语法</span>
+</h1>
+
+<p>本小节将会简单地介绍一下JSP开发中的基础语法。
+</p>
+
+<hr>
+<h2>脚本程序</h2>
+<p>脚本程序可以包含任意量的Java语句、变量、方法或表达式，只要它们在脚本语言中是有效的。</p>
+<p>
+脚本程序的语法格式：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">&lt;%</span><span class="pln"> </span><span class="pun">代码片段</span><span class="pln"> %&gt;</span></pre>
+<p>
+或者，您也可以编写与其等价的XML语句，就像下面这样：</p>
+<pre class="prettyprint prettyprinted"><span class="tag">&lt;jsp:scriptlet&gt;</span><span class="pln">
+   代码片段
+</span><span class="tag">&lt;/jsp:scriptlet&gt;</span></pre>
+<p>
+任何文本、HTML标签、JSP元素必须写在脚本程序的外面。</p>
+<p>
+下面给出一个示例，同时也是本教程的第一个JSP示例：</p>
+<pre class="prettyprint prettyprinted"><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;&lt;title&gt;</span><span class="pln">Hello World</span><span class="tag">&lt;/title&gt;&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+Hello World!</span><span class="tag">&lt;br/&gt;</span><span class="pln">
+</span><span class="pun">&lt;%</span><span class="pln">
+</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Your IP address is "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> request</span><span class="pun">.</span><span class="pln">getRemoteAddr</span><span class="pun">());</span><span class="pln">
+%&gt;
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p><b>注意：</b>请确保Apache Tomcat已经安装在C:\apache-tomcat-7.0.2目录下并且运行环境已经正确设置。</p>
+<p>
+将以上代码保存在hello.jsp中，然后将它放置在 C:\apache-tomcat-7.0.2\webapps\ROOT目录下，打开浏览器并在地址栏中输入http://localhost:8080/hello.jsp。运行后得到以下结果：</p>
+<p>
+<img src="./JSP 语法 _ 菜鸟教程_files/jsp_hello_world.jpg">
+
+</p>
+
+<h3>中文编码问题</h3>
+<p>如果我们要在页面正常显示中文，我们需要在 JSP 文件头部添加以下代码：&lt;&gt;
+</p><pre class="prettyprint prettyprinted"><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln">
+    pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;</span></pre>
+<p>解析来我们将以上程序修改为：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln">
+    pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">菜鸟教程(runoob.com)</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+Hello World!</span><span class="tag">&lt;br/&gt;</span><span class="pln">
+</span><span class="pun">&lt;%</span><span class="pln">
+</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"你的 IP 地址 "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> request</span><span class="pun">.</span><span class="pln">getRemoteAddr</span><span class="pun">());</span><span class="pln">
+%&gt;
+</span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+<p>这样中文就可以正常显示了。</p>
+
+<hr>
+<h2>
+	JSP声明</h2>
+<p>一个声明语句可以声明一个或多个变量、方法，供后面的Java代码使用。在JSP文件中，您必须先声明这些变量和方法然后才能使用它们。</p>
+<p>
+JSP声明的语法格式：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">&lt;%!</span><span class="pln"> declaration</span><span class="pun">;</span><span class="pln"> </span><span class="pun">[</span><span class="pln"> declaration</span><span class="pun">;</span><span class="pln"> </span><span class="pun">]+</span><span class="pln"> </span><span class="pun">...</span><span class="pln"> %&gt;</span></pre>
+<p>
+或者，您也可以编写与其等价的XML语句，就像下面这样：</p>
+<pre class="prettyprint prettyprinted"><span class="tag">&lt;jsp:declaration&gt;</span><span class="pln">
+   代码片段
+</span><span class="tag">&lt;/jsp:declaration&gt;</span></pre>
+<p>
+程序示例：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">&lt;%!</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> %&gt; 
+</span><span class="pun">&lt;%!</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> a</span><span class="pun">,</span><span class="pln"> b</span><span class="pun">,</span><span class="pln"> c</span><span class="pun">;</span><span class="pln"> %&gt; 
+</span><span class="pun">&lt;%!</span><span class="pln"> </span><span class="typ">Circle</span><span class="pln"> a </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Circle</span><span class="pun">(</span><span class="lit">2.0</span><span class="pun">);</span><span class="pln"> %&gt; </span></pre>
+<hr>
+<h2>
+	JSP表达式</h2><p>
+一个JSP表达式中包含的脚本语言表达式，先被转化成String，然后插入到表达式出现的地方。</p><p>
+由于表达式的值会被转化成String，所以您可以在一个文本行中使用表达式而不用去管它是否是HTML标签。</p><p>
+
+表达式元素中可以包含任何符合Java语言规范的表达式，但是不能使用分号来结束表达式。</p><p>
+JSP表达式的语法格式：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">&lt;%=</span><span class="pln"> </span><span class="pun">表达式</span><span class="pln"> %&gt;</span></pre>
+<p>
+同样，您也可以编写与之等价的XML语句：</p>
+<pre class="prettyprint prettyprinted"><span class="tag">&lt;jsp:expression&gt;</span><span class="pln">
+   表达式
+</span><span class="tag">&lt;/jsp:expression&gt;</span></pre><p>
+程序示例：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln">
+    pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">菜鸟教程(runoob.com)</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;p&gt;</span><span class="pln">
+   今天的日期是: </span><span class="pun">&lt;%=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Date</span><span class="pun">()).</span><span class="pln">toLocaleString</span><span class="pun">()</span><span class="pln">%&gt;
+</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln"> 
+</span><span class="tag">&lt;/html&gt;</span><span class="pln"> </span></pre>
+<p>运行后得到以下结果：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">今天的日期是:</span><span class="pln"> </span><span class="lit">2016</span><span class="pun">-</span><span class="lit">6</span><span class="pun">-</span><span class="lit">25</span><span class="pln"> </span><span class="lit">13</span><span class="pun">:</span><span class="lit">40</span><span class="pun">:</span><span class="lit">07</span></pre><hr>
+<h2>
+	JSP注释</h2>
+<p>JSP注释主要有两个作用：为代码作注释以及将某段代码注释掉。</p>
+<p>
+JSP注释的语法格式：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln">
+    pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">菜鸟教程(runoob.com)</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="pun">&lt;%--</span><span class="pln"> </span><span class="pun">该部分注释在网页中不会被显示--</span><span class="pln">%&gt; 
+</span><span class="tag">&lt;p&gt;</span><span class="pln">
+   今天的日期是: </span><span class="pun">&lt;%=</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">new</span><span class="pln"> java</span><span class="pun">.</span><span class="pln">util</span><span class="pun">.</span><span class="typ">Date</span><span class="pun">()).</span><span class="pln">toLocaleString</span><span class="pun">()</span><span class="pln">%&gt;
+</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="tag">&lt;/body&gt;</span><span class="pln"> 
+</span><span class="tag">&lt;/html&gt;</span><span class="pln"> </span></pre>
+<p>
+运行后得到以下结果：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">今天的日期是:</span><span class="pln"> </span><span class="lit">2016</span><span class="pun">-</span><span class="lit">6</span><span class="pun">-</span><span class="lit">25</span><span class="pln"> </span><span class="lit">13</span><span class="pun">:</span><span class="lit">41</span><span class="pun">:</span><span class="lit">26</span></pre>
+<p>
+不同情况下使用注释的语法规则：</p>
+<table class="reference">
+	<tbody>
+		<tr>
+			<th>
+				<strong>语法</strong></th>
+			<th>
+				描述</th>
+		</tr>
+		<tr>
+			<td>
+				&lt;%-- 注释 --%&gt;</td>
+			<td>
+				JSP注释，注释内容不会被发送至浏览器甚至不会被编译</td>
+		</tr>
+		<tr>
+			<td>
+				&lt;!-- 注释 --&gt;</td>
+			<td>
+				HTML注释，通过浏览器查看网页源代码时可以看见注释内容</td>
+		</tr>
+		<tr>
+			<td>
+				&lt;\%</td>
+			<td>
+				代表静态 &lt;%常量</td>
+		</tr>
+		<tr>
+			<td>
+				%\&gt;</td>
+			<td>
+				代表静态 %&gt; 常量</td>
+		</tr>
+		<tr>
+			<td>
+				\'</td>
+			<td>
+				在属性中使用的单引号</td>
+		</tr>
+		<tr>
+			<td>
+				\"</td>
+			<td>
+				在属性中使用的双引号</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<h2>
+	JSP指令</h2>
+	<p>
+JSP指令用来设置与整个JSP页面相关的属性。	</p>
+<p>
+JSP指令语法格式：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">&lt;%@</span><span class="pln"> directive attribute</span><span class="pun">=</span><span class="str">"value"</span><span class="pln"> %&gt;</span></pre>
+<p>
+这里有三种指令标签：</p>
+<table class="reference">
+	<tbody>
+		<tr>
+			<th>
+				<strong>指令</strong></th>
+			<th>
+				<strong>描述</strong></th>
+		</tr>
+		<tr>
+			<td>
+				&lt;%@ page ... %&gt;</td>
+			<td>
+				定义页面的依赖属性，比如脚本语言、error页面、缓存需求等等</td>
+		</tr>
+		<tr>
+			<td>
+				&lt;%@ include ... %&gt;</td>
+			<td>
+				包含其他文件</td>
+		</tr>
+		<tr>
+			<td>
+				&lt;%@ taglib ... %&gt;</td>
+			<td>
+				引入标签库的定义，可以是自定义标签</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<h2>
+	JSP行为</h2>
+	<p>
+JSP行为标签使用XML语法结构来控制servlet引擎。它能够动态插入一个文件，重用JavaBean组件，引导用户去另一个页面，为Java插件产生相关的HTML等等。</p>
+<p>
+行为标签只有一种语法格式，它严格遵守XML标准：</p>
+<pre class="prettyprint prettyprinted"><span class="tag">&lt;jsp:action_name</span><span class="pln"> </span><span class="atn">attribute</span><span class="pun">=</span><span class="atv">"value"</span><span class="pln"> </span><span class="tag">/&gt;</span></pre><p>
+行为标签基本上是一些预先就定义好的函数，下表罗列出了一些可用的JSP行为标签：：</p>
+<table class="reference">
+	<tbody>
+		<tr>
+			<th>
+				<strong>语法</strong></th>
+			<th>
+				<b>描述</b></th>
+		</tr>
+		<tr>
+			<td>
+				jsp:include</td>
+			<td>
+				用于在当前页面中包含静态或动态资源</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:useBean</td>
+			<td>
+				寻找和初始化一个JavaBean组件</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:setProperty</td>
+			<td>
+				设置 JavaBean组件的值</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:getProperty</td>
+			<td>
+				将&nbsp;JavaBean组件的值插入到 output中</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:forward</td>
+			<td>
+				从一个JSP文件向另一个文件传递一个包含用户请求的request对象</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:plugin</td>
+			<td>
+				用于在生成的HTML页面中包含Applet和JavaBean对象</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:element</td>
+			<td>
+				动态创建一个XML元素</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:attribute</td>
+			<td>
+				定义动态创建的XML元素的属性</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:body</td>
+			<td>
+				定义动态创建的XML元素的主体</td>
+		</tr>
+		<tr>
+			<td>
+				jsp:text</td>
+			<td>
+				用于封装模板数据</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<h2>
+	JSP隐含对象</h2><p>
+JSP支持九个自动定义的变量，江湖人称隐含对象。这九个隐含对象的简介见下表：</p>
+<table class="reference">
+	<tbody>
+		<tr>
+			<th>
+				<strong>对象</strong></th>
+			<th>
+				<strong>描述</strong></th>
+		</tr>
+		<tr>
+			<td>
+				request</td>
+			<td>
+				<strong>HttpServletRequest</strong>类的实例</td>
+		</tr>
+		<tr>
+			<td>
+				response</td>
+			<td>
+				<strong>HttpServletResponse</strong>类的实例</td>
+		</tr>
+		<tr>
+			<td>
+				out</td>
+			<td>
+				<strong>PrintWriter</strong>类的实例，用于把结果输出至网页上</td>
+		</tr>
+		<tr>
+			<td>
+				session</td>
+			<td>
+				<strong>HttpSession</strong>类的实例</td>
+		</tr>
+		<tr>
+			<td>
+				application</td>
+			<td>
+				<strong>ServletContext</strong>类的实例，与应用上下文有关</td>
+		</tr>
+		<tr>
+			<td>
+				config</td>
+			<td>
+				<strong>ServletConfig</strong>类的实例</td>
+		</tr>
+		<tr>
+			<td>
+				pageContext</td>
+			<td>
+				<strong>PageContext</strong>类的实例，提供对JSP页面所有对象以及命名空间的访问</td>
+		</tr>
+		<tr>
+			<td>
+				page</td>
+			<td>
+				类似于Java类中的this关键字</td>
+		</tr>
+		<tr>
+			<td>
+				Exception</td>
+			<td>
+				<strong>Exception</strong>类的对象，代表发生错误的JSP页面中对应的异常对象</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<h2>
+	控制流语句</h2><p>
+JSP提供对Java语言的全面支持。您可以在JSP程序中使用Java API甚至建立Java代码块，包括判断语句和循环语句等等。</p>
+<h2>
+	判断语句</h2><p>
+If…else块，请看下面这个例子：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln">
+    pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%!</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> day </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span><span class="pln"> %&gt; 
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">菜鸟教程(runoob.com)</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;h3&gt;</span><span class="pln">IF...ELSE 实例</span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+</span><span class="pun">&lt;%</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">day </span><span class="pun">==</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> day </span><span class="pun">==</span><span class="pln"> </span><span class="lit">7</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> %&gt;
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">今天是周末</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="pun">&lt;%</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> %&gt;
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">今天不是周末</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+</span><span class="pun">&lt;%</span><span class="pln"> </span><span class="pun">}</span><span class="pln"> %&gt;
+</span><span class="tag">&lt;/body&gt;</span><span class="pln"> 
+</span><span class="tag">&lt;/html&gt;</span><span class="pln"> </span></pre>
+<p>
+运行后得到以下结果：
+</p>
+<pre class="prettyprint prettyprinted"><span class="pln">IF</span><span class="pun">...</span><span class="pln">ELSE </span><span class="pun">实例</span><span class="pln">
+</span><span class="pun">今天不是周末</span></pre>
+<p>
+现在来看看switch…case块，与if…else块有很大的不同，它使用out.println()，并且整个都装在脚本程序的标签中，就像下面这样：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln">
+    pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%!</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> day </span><span class="pun">=</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span><span class="pln"> %&gt; 
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">菜鸟教程(runoob.com)</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;h3&gt;</span><span class="pln">SWITCH...CASE 实例</span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+</span><span class="pun">&lt;%</span><span class="pln"> 
+</span><span class="kwd">switch</span><span class="pun">(</span><span class="pln">day</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+</span><span class="kwd">case</span><span class="pln"> </span><span class="lit">0</span><span class="pun">:</span><span class="pln">
+   </span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"星期天"</span><span class="pun">);</span><span class="pln">
+   </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">case</span><span class="pln"> </span><span class="lit">1</span><span class="pun">:</span><span class="pln">
+   </span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"星期一"</span><span class="pun">);</span><span class="pln">
+   </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">case</span><span class="pln"> </span><span class="lit">2</span><span class="pun">:</span><span class="pln">
+   </span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"星期二"</span><span class="pun">);</span><span class="pln">
+   </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">case</span><span class="pln"> </span><span class="lit">3</span><span class="pun">:</span><span class="pln">
+   </span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"星期三"</span><span class="pun">);</span><span class="pln">
+   </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">case</span><span class="pln"> </span><span class="lit">4</span><span class="pun">:</span><span class="pln">
+   </span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"星期四"</span><span class="pun">);</span><span class="pln">
+   </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">case</span><span class="pln"> </span><span class="lit">5</span><span class="pun">:</span><span class="pln">
+   </span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"星期五"</span><span class="pun">);</span><span class="pln">
+   </span><span class="kwd">break</span><span class="pun">;</span><span class="pln">
+</span><span class="kwd">default</span><span class="pun">:</span><span class="pln">
+   </span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"星期六"</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+%&gt;
+</span><span class="tag">&lt;/body&gt;</span><span class="pln"> 
+</span><span class="tag">&lt;/html&gt;</span><span class="pln"> </span></pre>
+<p>
+浏览器访问，运行后得出以下结果：</p>
+<pre class="prettyprint prettyprinted"><span class="pln">SWITCH</span><span class="pun">...</span><span class="pln">CASE </span><span class="pun">实例</span><span class="pln">
+
+</span><span class="pun">星期三</span></pre>
+	<hr><h2>循环语句</h2>
+	<p>
+在JSP程序中可以使用Java的三个基本循环类型：for，while，和 do…while。</p><p>
+让我们来看看for循环的例子，以下输出的不同字体大小的"菜鸟教程"：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln">
+    pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%!</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> fontSize</span><span class="pun">;</span><span class="pln"> %&gt; 
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">菜鸟教程(runoob.com)</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;h3&gt;</span><span class="pln">For 循环实例</span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+</span><span class="pun">&lt;%</span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> fontSize </span><span class="pun">=</span><span class="pln"> </span><span class="lit">1</span><span class="pun">;</span><span class="pln"> fontSize </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">3</span><span class="pun">;</span><span class="pln"> fontSize</span><span class="pun">++){</span><span class="pln"> %&gt;
+   &lt;font color="green" size="</span><span class="pun">&lt;%=</span><span class="pln"> fontSize %&gt;"&gt;
+    菜鸟教程
+   </span><span class="tag">&lt;/font&gt;&lt;br</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="pun">&lt;%}</span><span class="pln">%&gt;
+</span><span class="tag">&lt;/body&gt;</span><span class="pln"> 
+</span><span class="tag">&lt;/html&gt;</span><span class="pln"> </span></pre>
+<p>
+运行后得到以下结果：</p>
+<p><img width="70%" src="./JSP 语法 _ 菜鸟教程_files/7B4B85CF-FE4B-43CB-AAFF-F8594AD4342C.jpg"></p>
+<p>
+将上例改用while循环来写：</p>
+<pre class="prettyprint prettyprinted"><span class="pun">&lt;%@</span><span class="pln"> page language</span><span class="pun">=</span><span class="str">"java"</span><span class="pln"> contentType</span><span class="pun">=</span><span class="str">"text/html; charset=UTF-8"</span><span class="pln">
+    pageEncoding</span><span class="pun">=</span><span class="str">"UTF-8"</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%!</span><span class="pln"> </span><span class="kwd">int</span><span class="pln"> fontSize</span><span class="pun">;</span><span class="pln"> %&gt; 
+</span><span class="dec">&lt;!DOCTYPE html&gt;</span><span class="pln">
+</span><span class="tag">&lt;html&gt;</span><span class="pln">
+</span><span class="tag">&lt;head&gt;</span><span class="pln">
+</span><span class="tag">&lt;meta</span><span class="pln"> </span><span class="atn">charset</span><span class="pun">=</span><span class="atv">"utf-8"</span><span class="tag">&gt;</span><span class="pln">
+</span><span class="tag">&lt;title&gt;</span><span class="pln">菜鸟教程(runoob.com)</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+</span><span class="tag">&lt;/head&gt;</span><span class="pln">
+</span><span class="tag">&lt;body&gt;</span><span class="pln">
+</span><span class="tag">&lt;h3&gt;</span><span class="pln">While 循环实例</span><span class="tag">&lt;/h3&gt;</span><span class="pln">
+</span><span class="pun">&lt;%</span><span class="kwd">while</span><span class="pln"> </span><span class="pun">(</span><span class="pln"> fontSize </span><span class="pun">&lt;=</span><span class="pln"> </span><span class="lit">3</span><span class="pun">){</span><span class="pln"> %&gt;
+   &lt;font color="green" size="</span><span class="pun">&lt;%=</span><span class="pln"> fontSize %&gt;"&gt;
+    菜鸟教程
+   </span><span class="tag">&lt;/font&gt;&lt;br</span><span class="pln"> </span><span class="tag">/&gt;</span><span class="pln">
+</span><span class="pun">&lt;%</span><span class="pln">fontSize</span><span class="pun">++;</span><span class="pln">%&gt;
+</span><span class="pun">&lt;%}</span><span class="pln">%&gt;
+</span><span class="tag">&lt;/body&gt;</span><span class="pln"> 
+</span><span class="tag">&lt;/html&gt;</span><span class="pln"> </span></pre>
+浏览器访问，输出结果为（fontSize 初始化为0，所以多输出了一行）：<br>
+<p><img width="70%" src="./JSP 语法 _ 菜鸟教程_files/4F744CC9-E484-45BA-AF18-27AFCF4AD45C.jpg"></p>
+	JSP运算符<p>
+JSP支持所有Java逻辑和算术运算符。</p><p>
+下表罗列出了JSP常见运算符，优先级从高到底：</p>
+<table class="reference">
+	<tbody>
+		<tr>
+			<th>
+				<strong>类别</strong></th>
+			<th>
+				<strong>操作符</strong></th>
+			<th>
+				<strong>结合性</strong></th>
+		</tr>
+		<tr>
+			<td>
+				后缀</td>
+			<td>
+				() [] . (点运算符)</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				一元</td>
+			<td>
+				++ - - ! ~</td>
+			<td>
+				右到左</td>
+		</tr>
+		<tr>
+			<td>
+				可乘性</td>
+			<td>
+				* / %&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				可加性</td>
+			<td>
+				+ -&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				移位</td>
+			<td>
+				&gt;&gt; &gt;&gt;&gt; &lt;&lt; &nbsp;</td>
+			<td>
+				左到右&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+				关系</td>
+			<td>
+				&gt; &gt;= &lt; &lt;= &nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				相等/不等</td>
+			<td>
+				== !=&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				位与</td>
+			<td>
+				&amp;&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				位异或</td>
+			<td>
+				^&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				位或</td>
+			<td>
+				|&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				逻辑与</td>
+			<td>
+				&amp;&amp;&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				逻辑或</td>
+			<td>
+				||&nbsp;</td>
+			<td>
+				左到右</td>
+		</tr>
+		<tr>
+			<td>
+				条件判断</td>
+			<td>
+				?:&nbsp;</td>
+			<td>
+				右到左</td>
+		</tr>
+		<tr>
+			<td>
+				赋值</td>
+			<td>
+				= += -= *= /= %= &gt;&gt;= &lt;&lt;= &amp;= ^= |=&nbsp;</td>
+			<td>
+				右到左</td>
+		</tr>
+		<tr>
+			<td>
+				逗号&nbsp;</td>
+			<td>
+				,&nbsp;</td>
+			<td>
+				左到右&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<hr>
+<h2>
+	JSP 字面量</h2><p>
+JSP语言定义了以下几个字面量：</p>
+<ul>
+	<li>
+		布尔值(boolean)：true 和 false;</li>
+	<li>
+		整型(int)：与 Java 中的一样;</li>
+	<li>
+		浮点型(float)：与 Java 中的一样;</li>
+	<li>
+		字符串(string)：以单引号或双引号开始和结束;</li>
+	<li>
+		Null：null。</li>
+</ul>			
+			
+			</div>
+		</div>
+		
+		<div class="previous-next-links">
+			<div class="previous-design-link">← <a href="http://www.runoob.com/jsp/jsp-life-cycle.html" rel="prev" title="JSP 生命周期">JSP 生命周期</a> </div>
+			<div class="next-design-link"><a href="http://www.runoob.com/jsp/jsp-directives.html" rel="next" title="JSP 指令">JSP 指令</a> →</div>
+		</div>
+		
+		<div class="sidebar-box ad-box ad-box-large">
+		<div class="ad-336280">
+			<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- 移动版 自动调整 -->
+			<ins class="adsbygoogle" style="display:inline-block;min-width:200px;max-width:360px;width:100%;height:100%px" data-ad-client="ca-pub-5751451760833794" data-ad-slot="1691338467" data-ad-format="rectangle"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+		</div>
+		
+	</div>
+</div>
+	
+
+<!-- 右边栏 -->
+<div class="fivecol last right-column">
+	<div class="tab tab-light-blue" style="text-align: center;">关注微信</div>
+	<div class="sidebar-box">
+		<a href="http://m.runoob.com/" target="_blank"> <img src="./JSP 语法 _ 菜鸟教程_files/qrcode.jpg" alt="移动版"> </a>
+		<div class="qqinfo" style="display: none;">
+		<!-- <a target="_blank" href="http://jq.qq.com/?_wv=1027&k=dOwwKN" id="qqhref">
+		<img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="菜鸟家族" title="菜鸟家族"></a>
+		<span>(群号：<span id="qqid">365967760</span>)</span>-->
+		</div>
+		
+	</div>
+	
+
+	
+	<div class="tab tab-light-blue">分类导航</div>
+	<div class="sidebar-box sidebar-cate">
+		
+		<div class="sidebar-tree">
+			<ul><li><a href="javascript:void(0);" class="tit">HTML / CSS</a><ul><li><a title="HTML 教程" href="http://www.runoob.com/html/html-tutorial.html">HTML 教程</a></li><li><a title="HTML5 教程" href="http://www.runoob.com/html/html5-intro.html">HTML5 教程</a></li><li><a title="CSS 教程" href="http://www.runoob.com/css/css-tutorial.html">CSS 教程</a></li><li><a title="CSS3 教程" href="http://www.runoob.com/css3/css3-tutorial.html">CSS3 教程</a></li><li><a title="Bootstrap 教程" href="http://www.runoob.com/bootstrap/bootstrap-tutorial.html">Bootstrap 教程</a></li><li><a title="Foundation 教程" href="http://www.runoob.com/foundation/foundation-tutorial.html">Foundation 教程</a></li></ul></li><li><a href="javascript:void(0);" class="tit">JavaScript</a><ul><li><a title="JavaScript 教程" href="http://www.runoob.com/js/js-tutorial.html">JavaScript 教程</a></li><li><a title="HTML DOM 教程" href="http://www.runoob.com/htmldom/htmldom-tutorial.html">HTML DOM 教程</a></li><li><a title="jQuery 教程" href="http://www.runoob.com/jquery/jquery-tutorial.html">jQuery 教程</a></li><li><a title="AngularJS 教程" href="http://www.runoob.com/angularjs/angularjs-tutorial.html">AngularJS 教程</a></li><li><a title="React 教程" href="http://www.runoob.com/react/react-tutorial.html">React 教程</a></li><li><a title="jQuery UI 教程" href="http://www.runoob.com/jqueryui/jqueryui-tutorial.html">jQuery UI 教程</a></li><li><a title="jQuery EasyUI 教程" href="http://www.runoob.com/jeasyui/jqueryeasyui-tutorial.html">jQuery EasyUI 教程</a></li><li><a title="Node.js 教程" href="http://www.runoob.com/nodejs/nodejs-tutorial.html">Node.js 教程</a></li><li><a title="AJAX 教程" href="http://www.runoob.com/ajax/ajax-tutorial.html">AJAX 教程</a></li><li><a title="JSON 教程" href="http://www.runoob.com/json/json-tutorial.html">JSON 教程</a></li><li><a title="Highcharts 教程" href="http://www.runoob.com/highcharts/highcharts-tutorial.html">Highcharts 教程</a></li><li><a title="Google 地图 教程" href="http://www.runoob.com/googleapi/google-maps-basic.html">Google 地图 教程</a></li></ul></li><li><a href="javascript:void(0);" class="tit">服务端</a><ul><li><a title="PHP 教程" href="http://www.runoob.com/php/php-tutorial.html">PHP 教程</a></li><li><a title="Python 教程" href="http://www.runoob.com/python/python-tutorial.html">Python 教程</a></li><li><a title="Python3 教程" href="http://www.runoob.com/python3/python3-tutorial.html">Python3 教程</a></li><li><a title="Django 教程" href="http://www.runoob.com/django/django-tutorial.html">Django 教程</a></li><li><a title="Linux 教程" href="http://www.runoob.com/linux/linux-tutorial.html">Linux 教程</a></li><li><a title="Docker 教程" href="http://www.runoob.com/docker/docker-tutorial.html">Docker 教程</a></li><li><a title="Ruby 教程" href="http://www.runoob.com/ruby/ruby-tutorial.html">Ruby 教程</a></li><li><a title="Java 教程" href="http://www.runoob.com/java/java-tutorial.html">Java 教程</a></li><li><a title="C 教程" href="http://www.runoob.com/c/c-tutorial.html">C 教程</a></li><li><a title="C++ 教程" href="http://www.runoob.com/cplusplus/cpp-tutorial.html">C++ 教程</a></li><li><a title="Perl 教程" href="http://www.runoob.com/perl/perl-tutorial.html">Perl 教程</a></li><li><a title="Servlet 教程" href="http://www.runoob.com/servlet/servlet-tutorial.html">Servlet 教程</a></li><li><a title="JSP 教程" href="http://www.runoob.com/jsp/jsp-tutorial.html">JSP 教程</a></li><li><a title="Lua 教程" href="http://www.runoob.com/lua/lua-tutorial.html">Lua 教程</a></li><li><a title="Scala 教程" href="http://www.runoob.com/scala/scala-tutorial.html">Scala 教程</a></li><li><a title="Go 教程" href="http://www.runoob.com/go/go-tutorial.html">Go 教程</a></li><li><a title="设计模式" href="http://www.runoob.com/design-pattern/design-pattern-tutorial.html">设计模式</a></li><li><a title="正则表达式" href="http://www.runoob.com/regexp/regexp-tutorial.html">正则表达式</a></li><li><a title="ASP 教程" href="http://www.runoob.com/asp/asp-tutorial.html">ASP 教程</a></li><li><a title="AppML 教程" href="http://www.runoob.com/appml/appml-tutorial.html">AppML 教程</a></li><li><a title="VBScript 教程" href="http://www.runoob.com/vbscript/vbscript-tutorial.html">VBScript 教程</a></li></ul></li><li><a href="javascript:void(0);" class="tit">数据库</a><ul><li><a title="SQL 教程" href="http://www.runoob.com/sql/sql-tutorial.html">SQL 教程</a></li><li><a title="Mysql 教程" href="http://www.runoob.com/mysql/mysql-tutorial.html">Mysql 教程</a></li><li><a title="SQLite 教程" href="http://www.runoob.com/sqlite/sqlite-tutorial.html">SQLite 教程</a></li><li><a title="MongoDB 教程" href="http://www.runoob.com/mongodb/mongodb-tutorial.html">MongoDB 教程</a></li><li><a title="Redis 教程" href="http://www.runoob.com/redis/redis-tutorial.html">Redis 教程</a></li><li><a title="Memcached 教程" href="http://www.runoob.com/Memcached/Memcached-tutorial.html">Memcached 教程</a></li></ul></li><li><a href="javascript:void(0);" class="tit">移动端</a><ul><li><a title="Android 教程" href="http://www.runoob.com/w3cnote/android-tutorial-intro.html">Android 教程</a></li><li><a title="Swift 教程" href="http://www.runoob.com/swift/swift-tutorial.html">Swift 教程</a></li><li><a title="jQuery Mobile 教程" href="http://www.runoob.com/jquerymobile/jquerymobile-tutorial.html">jQuery Mobile 教程</a></li><li><a title="ionic 教程" href="http://www.runoob.com/ionic/ionic-tutorial.html">ionic 教程</a></li></ul></li><li><a href="javascript:void(0);" class="tit">XML 教程</a><ul><li><a title="XML 教程" href="http://www.runoob.com/xml/xml-tutorial.html">XML 教程</a></li><li><a title="DTD 教程" href="http://www.runoob.com/dtd/dtd-tutorial.html">DTD 教程</a></li><li><a title="XML DOM 教程" href="http://www.runoob.com/dom/dom-tutorial.html">XML DOM 教程</a></li><li><a title="XSLT 教程" href="http://www.runoob.com/xsl/xsl-tutorial.html">XSLT 教程</a></li><li><a title="XPath 教程" href="http://www.runoob.com/xpath/xpath-tutorial.html">XPath 教程</a></li><li><a title="XQuery 教程" href="http://www.runoob.com/xquery/xquery-tutorial.html">XQuery 教程</a></li><li><a title="XLink 教程" href="http://www.runoob.com/xlink/xlink-tutorial.html">XLink 教程</a></li><li><a title="XPointer 教程" href="http://www.runoob.com/xlink/xlink-tutorial.html">XPointer 教程</a></li><li><a title="XML Schema 教程" href="http://www.runoob.com/schema/schema-tutorial.html">XML Schema 教程</a></li><li><a title="XSL-FO 教程" href="http://www.runoob.com/xslfo/xslfo-tutorial.html">XSL-FO 教程</a></li><li><a title="SVG 教程" href="http://www.runoob.com/svg/svg-tutorial.html">SVG 教程</a></li></ul></li><li><a href="javascript:void(0);" class="tit">ASP.NET</a><ul><li><a title="ASP.NET 教程" href="http://www.runoob.com/aspnet/aspnet-tutorial.html">ASP.NET 教程</a></li><li><a title="C# 教程" href="http://www.runoob.com/csharp/csharp-tutorial.html">C# 教程</a></li><li><a title="Web Pages 教程" href="http://www.runoob.com/aspnet/webpages-intro.html">Web Pages 教程</a></li><li><a title="Razor 教程" href="http://www.runoob.com/aspnet/razor-intro.html">Razor 教程</a></li><li><a title="MVC 教程" href="http://www.runoob.com/aspnet/mvc-intro.html">MVC 教程</a></li><li><a title="Web Forms 教程" href="http://www.runoob.com/aspnet/aspnet-intro.html">Web Forms 教程</a></li></ul></li><li><a href="javascript:void(0);" class="tit">Web Services</a><ul><li><a title="Web Services 教程" href="http://www.runoob.com/webservices/webservices-tutorial.html">Web Services 教程</a></li><li><a title="WSDL 教程" href="http://www.runoob.com/wsdl/wsdl-tutorial.html">WSDL 教程</a></li><li><a title="SOAP 教程" href="http://www.runoob.com/soap/soap-tutorial.html">SOAP 教程</a></li><li><a title="RSS 教程" href="http://www.runoob.com/rss/rss-tutorial.html">RSS 教程</a></li><li><a title="RDF 教程" href="http://www.runoob.com/rdf/rdf-tutorial.html">RDF 教程</a></li></ul></li><li><a href="javascript:void(0);" class="tit">开发工具</a><ul><li><a title="Eclipse 教程" href="http://www.runoob.com/eclipse/eclipse-tutorial.html">Eclipse 教程</a></li><li><a title="Git 教程" href="http://www.runoob.com/git/git-tutorial.html">Git 教程</a></li><li><a title="Firebug 教程" href="http://www.runoob.com/firebug/firebug-tutorial.html">Firebug 教程</a></li></ul></li><li><a href="javascript:void(0);" class="tit">网站建设</a><ul><li><a title="HTTP 教程" href="http://www.runoob.com/http/http-tutorial.html">HTTP 教程</a></li><li><a title="网站建设指南" href="http://www.runoob.com/web/web-buildingprimer.html">网站建设指南</a></li><li><a title="浏览器信息" href="http://www.runoob.com/browsers/browser-information.html">浏览器信息</a></li><li><a title="网站主机教程" href="http://www.runoob.com/hosting/hosting-tutorial.html">网站主机教程</a></li><li><a title="TCP/IP 教程" href="http://www.runoob.com/tcpip/tcpip-tutorial.html">TCP/IP 教程</a></li><li><a title="W3C 教程" href="http://www.runoob.com/w3c/w3c-tutorial.html">W3C 教程</a></li><li><a title="网站品质" href="http://www.runoob.com/quality/quality-tutorial.html">网站品质</a></li></ul></li></ul>			</div>
+	
+	</div>
+	
+	<br>
+	
+	<div class="sidebar-box ad-box ad-box-large">
+		<div class="sidebar-box advertise-here">
+			<a href="javascript:void(0);">Advertisement</a>
+		</div>
+		<div class="ad-600160">
+		<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- 侧栏1 -->
+		<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-5751451760833794" data-ad-slot="4106274865"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+		</div>
+	</div>
+</div></div>
+
+</div>
+<!-- 底部 -->
+
+
+<div id="footer" class="mar-t50">
+   <div class="w3cschoolcc-block">
+    <div class="w3cschoolcc cf">
+     <dl>
+      <dt>
+       在线实例
+      </dt>
+      <dd>
+       ·<a href="http://www.runoob.com/html/html-examples.html">HTML 实例</a>
+      </dd>
+      <dd>
+       ·<a href="http://www.runoob.com/css/css-examples.html">CSS 实例</a>
+      </dd>
+      <dd>
+       ·<a href="http://www.runoob.com/js/js-examples.html">JavaScript 实例</a>
+      </dd>
+      <dd>
+       ·<a href="http://www.runoob.com/ajx/ajax-examples.html">Ajax 实例</a>
+      </dd>
+       <dd>
+       ·<a href="http://www.runoob.com/jquery/jquery-examples.html">jQuery 实例</a>
+      </dd>
+      <dd>
+       ·<a href="http://www.runoob.com/xml/xml-examples.html">XML 实例</a>
+      </dd>
+      <dd>
+       ·<a href="http://www.runoob.com/java/java-examples.html">Java 实例</a>
+      </dd>
+     
+     </dl>
+     <dl>
+      <dt>
+      字符集&amp;工具
+      </dt>
+      <dd>
+       · <a href="http://www.runoob.com/charsets/html-charsets.html">HTML 字符集设置</a>
+      </dd>
+      <dd>
+       · <a href="http://www.runoob.com/tags/html-ascii.html">HTML ASCII 字符集</a>
+      </dd>
+     <dd>
+       · <a href="http://www.runoob.com/tags/ref-entities.html">HTML ISO-8859-1</a>
+      </dd> 
+      <dd>
+       · <a href="http://www.runoob.com/tags/ref-symbols.html">HTML 实体符号</a>
+      </dd>
+      <dd>
+       · <a href="http://www.runoob.com/tags/html-colorpicker.html">HTML 拾色器</a>
+      </dd>
+      <dd>
+       · <a href="http://www.runoob.com/jsontool">JSON 格式化工具</a>
+      </dd>
+     </dl>
+     <dl>
+      <dt>
+       最新更新
+      </dt>
+                   <dd>
+       ·
+      <a href="http://www.runoob.com/python3/python3-prime-number-intervals.html" title="Python 输出指定范围内的素数">Python 输出指定...</a>
+      </dd>
+              <dd>
+       ·
+      <a href="http://www.runoob.com/jsref/coll-tr-cells.html" title="HTML DOM tr cells 集合">HTML DOM tr cel...</a>
+      </dd>
+              <dd>
+       ·
+      <a href="http://www.runoob.com/jsref/prop-track-label.html" title="HTML DOM Track label 属性">HTML DOM Track ...</a>
+      </dd>
+              <dd>
+       ·
+      <a href="http://www.runoob.com/jsref/prop-script-charset.html" title="HTML DOM Script src 属性">HTML DOM Script...</a>
+      </dd>
+              <dd>
+       ·
+      <a href="http://www.runoob.com/w3cnote/getting-started-with-typescript.html" title="TypeScript 入门教程">TypeScript 入门...</a>
+      </dd>
+              <dd>
+       ·
+      <a href="http://www.runoob.com/w3cnote/mobile-testing-skills.html" title="移动无线测试工程师必备技能图谱">移动无线测试工...</a>
+      </dd>
+              <dd>
+       ·
+      <a href="http://www.runoob.com/w3cnote/ios-dev-skills.html" title="iOS 开发工程师必备技能图谱">iOS 开发工程师...</a>
+      </dd>
+             </dl>
+     <dl>
+      <dt>
+       站点信息
+      </dt>
+      <dd>
+       ·
+       <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=ssbDyoOAgfLU3crf09venNHd3w" rel="external nofollow">意见反馈</a>
+      </dd>
+      <dd>
+       ·
+      <a href="http://www.runoob.com/disclaimer">免责声明</a>
+       </dd>
+      <dd>
+       ·
+       <a href="http://www.runoob.com/aboutus">关于我们</a>
+       </dd>
+      <dd>
+       ·
+      <a href="http://www.runoob.com/archives">文章归档</a>
+      </dd>
+      
+     </dl>
+     <div class="search-share">
+      <div class="app-download">
+        <div>
+         <strong>关注微信</strong>
+        </div>
+      </div>
+      <div class="share">
+      <img width="150" height="150" src="./JSP 语法 _ 菜鸟教程_files/qrcode.jpg">
+       </div>
+     </div>
+    </div>
+   </div>
+   <div class="w-1000 copyright">
+     Copyright © 2013-2016    <strong><a href="http://www.runoob.com/" target="_blank">菜鸟教程</a></strong>&nbsp;
+    <strong><a href="http://www.runoob.com/" target="_blank">runoob.com</a></strong> All Rights Reserved. 备案号：闽ICP备15012807号-1
+   </div>
+  </div>
+  <div class="fixed-btn">
+    <a class="go-top" href="javascript:void(0)" title="返回顶部" style="display: none;"> <i class="fa fa-angle-up"></i></a>
+    <a class="qrcode" href="javascript:void(0)" title="关注我们"><i class="fa fa-qrcode"></i></a>
+    <a class="writer" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=ssbDyoOAgfLU3crf09venNHd3w" style="font-size: 12px;" title="Bug 反馈">反馈</a>
+    <!-- qrcode modal -->
+    <div id="bottom-qrcode" class="modal panel-modal hide fade in">
+      <h4>微信关注</h4>
+      <div class="panel-body"><img alt="微信关注" width="128" height="128" src="./JSP 语法 _ 菜鸟教程_files/qrcode(1).jpg"></div>
+    </div>
+  </div>
+<div style="display:none;">
+  <script src="./JSP 语法 _ 菜鸟教程_files/stat.php" language="JavaScript"></script><script src="./JSP 语法 _ 菜鸟教程_files/core.php" charset="utf-8" type="text/javascript"></script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?8e2a116daf0104a78d601f40a45c75b4";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+</div><div id="_uuid_im_3029_" style="display: none;"></div>
+<script src="./JSP 语法 _ 菜鸟教程_files/main.js"></script>
+
+
+<div id="HUABAN_WIDGETS"><div class="HUABAN-f-button" style="display: none; left: 591.281px; top: 937px;">采集</div><style>#HUABAN_WIDGETS  {font-family: "helvetica neue",arial,sans-serif; color: #444; font-size: 14px;} #HUABAN_WIDGETS * {box-sizing: content-box;} #HUABAN_WIDGETS .HUABAN-main {position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: #e5e5e5; background: rgba(229,229,229,.95); max-height: 100%; overflow: hidden; z-index: 9999999999999;} #HUABAN_WIDGETS a img {border: 0;} #HUABAN_WIDGETS .HUABAN-header {height: 50px; background: white; box-shadow: 0 0 4px rgba(0,0,0,.2); width: 100%; left: 0; top: 0; position: absolute;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-inner {margin: 0 auto; position: relative;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-close {width: 60px; height: 50px; border-left: 1px solid #ddd; position: absolute; right: 0; top: 0; background: url(//huaban.com/img/widgets/btn_close.png) 20px 14px no-repeat; cursor: pointer;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-close:hover {background-position: 20px -26px;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-close:active {background-position: 20px -66px;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-logo {display: block; position: absolute; top: 12px;} #HUABAN_WIDGETS .HUABAN-waterfall-holder {position: relative; overflow-y: auto; height: 100%;} #HUABAN_WIDGETS .HUABAN-waterfall {position: relative; margin-top: 50px;} #HUABAN_WIDGETS .HUABAN-waterfall .HUABAN-empty {position: absolute; left: 50%; top: 30px; height: 36px; line-height: 36px; width: 216px; text-align: left; margin-left: -128px; color: #777; background: url(//huaban.com/img/widgets/icon_notice.png) 12px 8px no-repeat white; padding-left: 40px; font-size: 15px;} #HUABAN_WIDGETS .HUABAN-btn {display: inline-block; border-radius: 2px; font-size: 14px; padding: 0 12px; height: 30px; line-height: 30px; cursor: pointer; text-decoration: none; white-space: nowrap; -moz-user-select: none; -webkit-user-select: none; user-select: none; text-align: center; background: #D53939; color: white;} #HUABAN_WIDGETS .HUABAN-btn:hover {background: #E54646;} #HUABAN_WIDGETS .HUABAN-btn:active {background: #C52424;} #HUABAN_WIDGETS .HUABAN-wbtn {background: #EDEDED; color: #444;} #HUABAN_WIDGETS .HUABAN-wbtn:hover {background: #F2F2F2;} #HUABAN_WIDGETS .HUABAN-wbtn:active {background: #DDD;} #HUABAN_WIDGETS .HUABAN-f-button {position: absolute; display: none; z-index: 9999999999998; box-shadow: 0 0 0 2px rgba(255,255,255,.2); background: #aaa; background: rgba(0,0,0,.3); color: white; cursor: pointer; padding: 0 12px; height: 30px; line-height: 30px; border-radius: 2px; font-size: 14px} #HUABAN_WIDGETS .HUABAN-f-button:hover {background-color: #999; background-color: rgba(0,0,0,.5);} #HUABAN_WIDGETS .HUABAN-f-button:active {background-color: rgba(0,0,0,.6);} #HUABAN_WIDGETS .HUABAN-red-normal-icon-button {width: 36px; height: 24px; border: 0px; line-height: 24px; padding-left: 24px; padding-right: 0px; text-align: left; background: url(//huaban.com/img/widgets/widget_icons.png) 0 -200px no-repeat; box-shadow: none !important; font-size: 14px; background-color: transparent !important;} #HUABAN_WIDGETS .HUABAN-red-normal-icon-button:hover {background-position: -130px -200px;} #HUABAN_WIDGETS .HUABAN-red-normal-icon-button:active {background-position: -260px -200px;} #HUABAN_WIDGETS .HUABAN-red-large-icon-button {width: 80px; height: 24px; border: 0px; line-height: 24px; padding-left: 24px; padding-right: 0px; text-align: left; background: url(//huaban.com/img/widgets/widget_icons.png) 0 -150px no-repeat; box-shadow: none !important; font-size: 14px; background-color: transparent !important;} #HUABAN_WIDGETS .HUABAN-red-large-icon-button:hover {background-position: -130px -150px;} #HUABAN_WIDGETS .HUABAN-red-large-icon-button:active {background-position: -260px -150px;} #HUABAN_WIDGETS .HUABAN-red-small-icon-button {width: 30px; height: 21px; border: 0px; line-height: 21px; padding-left: 20px; padding-right: 0px; text-align: left; background: url(//huaban.com/img/widgets/widget_icons.png) 0 -250px no-repeat; box-shadow: none !important; font-size: 12px; background-color: transparent !important;} #HUABAN_WIDGETS .HUABAN-red-small-icon-button:hover {background-position: -130px -250px;} #HUABAN_WIDGETS .HUABAN-red-small-icon-button:active {background-position: -260px -250px;} #HUABAN_WIDGETS .HUABAN-white-normal-icon-button {width: 36px; height: 24px; border: 0px; line-height: 24px; padding-left: 24px; padding-right: 0px; text-align: left; background: url(//huaban.com/img/widgets/widget_icons.png) 0 -500px no-repeat; box-shadow: none !important; color: #444; font-size: 14px; background-color: transparent !important;} #HUABAN_WIDGETS .HUABAN-white-normal-icon-button:hover {background-position: -130px -500px;} #HUABAN_WIDGETS .HUABAN-white-normal-icon-button:active {background-position: -260px -500px;} #HUABAN_WIDGETS .HUABAN-white-large-icon-button {width: 80px; height: 24px; border: 0px; line-height: 24px; padding-left: 24px; padding-right: 0px; text-align: left; background: url(//huaban.com/img/widgets/widget_icons.png) 0 -450px no-repeat; box-shadow: none !important; color: #444; font-size: 14px; background-color: transparent !important;} #HUABAN_WIDGETS .HUABAN-white-large-icon-button:hover {background-position: -130px -450px;} #HUABAN_WIDGETS .HUABAN-white-large-icon-button:active {background-position: -260px -450px;} #HUABAN_WIDGETS .HUABAN-white-small-icon-button {width: 30px; height: 21px; border: 0px; line-height: 21px; padding-left: 20px; padding-right: 0px; text-align: left; background: url(//huaban.com/img/widgets/widget_icons.png) 0 -550px no-repeat; box-shadow: none !important; color: #444; font-size: 12px; background-color: transparent !important;} #HUABAN_WIDGETS .HUABAN-white-small-icon-button:hover {background-position: -130px -550px;} #HUABAN_WIDGETS .HUABAN-white-small-icon-button:active {background-position: -260px -550px;} #HUABAN_WIDGETS .HUABAN-cell {width: 236px; position: absolute; background: white; box-shadow: 0 1px 3px rgba(0,0,0,.3); transition: left .3s ease-in-out, top .3s linear;} #HUABAN_WIDGETS .HUABAN-cell .HUABAN-img-holder {overflow: hidden; position: relative;} #HUABAN_WIDGETS .HUABAN-cell .HUABAN-img-holder:hover img.HUABAN-cell-img {opacity: .8} #HUABAN_WIDGETS .HUABAN-cell .HUABAN-video-icon {width: 72px; height: 62px; position: absolute; left: 50%; top: 50%; margin: -31px auto auto -36px; background: url(//huaban.com/img/widgets/media_video.png) 0 0 no-repeat; display: none;} #HUABAN_WIDGETS .HUABAN-cell.HUABAN-video .HUABAN-video-icon {display: block;} #HUABAN_WIDGETS .HUABAN-cell .HUABAN-over {display: none;} #HUABAN_WIDGETS .HUABAN-cell:hover .HUABAN-over {display: block;} #HUABAN_WIDGETS .HUABAN-cell .HUABAN-over .HUABAN-btn {width: 60px; height: 34px; padding: 0; position: absolute; left: 50%; top: 50%; margin: -18px 0 0 -31px; line-height: 34px; box-shadow: 0 0 0 2px rgba(255,255,255,.2); font-size: 16px;} #HUABAN_WIDGETS .HUABAN-cell.HUABAN-long .HUABAN-img-holder {height: 600px;} #HUABAN_WIDGETS .HUABAN-cell.HUABAN-long .HUABAN-img-holder:after {content: ""; display: block; position: absolute; width: 236px; height: 12px; left: 0; bottom: 0; background: url(//huaban.com/img/widgets/long_image_shadow_2.png) repeat-x 4px top;} #HUABAN_WIDGETS .HUABAN-cell img {width: 236px; display: block;} #HUABAN_WIDGETS .HUABAN-cell .HUABAN-size {margin: 8px 16px; font-size: 12px; color: #999} #HUABAN_WIDGETS .HUABAN-cell .HUABAN-description {display: block; width: 202px; margin: 0 6px 6px; padding: 6px 10px; border: 0; resize: none; outline: 0; border: 1px solid transparent; line-height: 18px; font-size: 13px; overflow: hidden; word-wrap: break-word; background: url(//huaban.com/img/widgets/icon_edit.png) 500px center no-repeat;} #HUABAN_WIDGETS .HUABAN-cell:hover .HUABAN-description {background-color: #fff9e0; background-position: right top;} #HUABAN_WIDGETS .HUABAN-cell .HUABAN-description:focus {background-color: #F9F9F9; background-position: 500px center;} #HUABAN_WIDGETS .HUABAN-cell .HUABAN-select-btn {width: 34px; height:34px; background: url(//huaban.com/img/widgets/checkbox.png) 0 0 no-repeat; position: absolute; right: 5px; top: 5px; cursor: pointer;} #HUABAN_WIDGETS .HUABAN-cell .HUABAN-pinned-label {position: absolute; left: 0; top: 10px; height: 24px; line-height: 24px; padding: 0 10px; background: #CE0000; background: rgba(200, 0, 0, 0.9); color: white; font-size: 12px; display: none;} #HUABAN_WIDGETS .HUABAN-cell.HUABAN-pinned .HUABAN-pinned-label {display: block;} #HUABAN_WIDGETS .HUABAN-selected .HUABAN-select-btn {background-position: 0 -40px;} #HUABAN_WIDGETS .HUABAN-multi .HUABAN-cell .HUABAN-img-holder {cursor: pointer;} #HUABAN_WIDGETS .HUABAN-multi .HUABAN-cell .HUABAN-cell-pin-btn {display: none;} #HUABAN_WIDGETS .HUABAN-multi .HUABAN-cell .HUABAN-over {display: block;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-multi-buttons {position: absolute; top: 10px; left: 0; display: none;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-multi-buttons .HUABAN-btn {margin-right: 10px;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-multi-noti {display: none; height: 50px; line-height: 50px; text-align: center; font-size: 16px; color: #999; font-weight: bold;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-multi-noti span {font-weight: normal;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-multi-noti i {font-style: normal;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-notice {padding: 0 10px; height:30px; line-height: 30px; position: absolute; left: 50%; top: 10px; margin-left: -83px; background: #fff9e2; text-align: center;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-notice i {display: inline-block; width: 18px; height: 18px; background: url(//huaban.com/img/widgets/icon_notice.png) 0 0 no-repeat; vertical-align: top; margin: 6px 6px 0 0;} #HUABAN_WIDGETS .HUABAN-switcher {height: 50px; width: 100px; position: relative;} #HUABAN_WIDGETS .HUABAN-switcher .HUABAN-title {position: absolute; right: 75px; top: 13px; color: #999; white-space: nowrap; line-height: 24px; opacity: 0; visibility: hidden;} #HUABAN_WIDGETS .HUABAN-switcher:hover .HUABAN-title {visibility: visible; opacity: 1; -webkit-transition: opacity .2s linear; -webkit-transition-delay: .2s; transition: opacity .2s linear; transition-delay: .2s;} #HUABAN_WIDGETS .HUABAN-switcher .HUABAN-bar {width: 40px; height: 24px; background: #EB595F; border-radius: 12px; color: white; position: absolute; right: 0; top: 13px; cursor: pointer; font-size: 14px; -webkit-transition: all .2s linear; transition: all .2s linear;} #HUABAN_WIDGETS .HUABAN-switcher:hover .HUABAN-bar {width: 64px;} #HUABAN_WIDGETS .HUABAN-switcher.HUABAN-on .HUABAN-bar {background: #7DD100;} #HUABAN_WIDGETS .HUABAN-switcher .HUABAN-bar .HUABAN-round {width: 20px; height: 20px; background: white; border-radius: 50%; position: absolute; left: 2px; top: 2px; -webkit-transition: left .2s linear; box-shadow: 0px 0px 3px rgba(0,0,0,0.15); transition: left .2s linear; box-shadow: 0px 0px 3px rgba(0,0,0,0.15);} #HUABAN_WIDGETS .HUABAN-switcher.HUABAN-on .HUABAN-bar .HUABAN-round {left: 17px;} #HUABAN_WIDGETS .HUABAN-switcher.HUABAN-on:hover .HUABAN-bar .HUABAN-round {left: 41px;} #HUABAN_WIDGETS .HUABAN-switcher .HUABAN-bar .HUABAN-text-1 {height: 24px; line-height: 24px; position: absolute; right:17px; top: 0; opacity: 0; visibility: hidden; -webkit-transition: all .2s linear; transition: all .2s linear;} #HUABAN_WIDGETS .HUABAN-switcher:hover .HUABAN-bar .HUABAN-text-1 {right: 9px; opacity: 1; visibility: visible;} #HUABAN_WIDGETS .HUABAN-switcher.HUABAN-on:hover .HUABAN-bar .HUABAN-text-1 {right: 17px; opacity: 0; visibility: hidden;} #HUABAN_WIDGETS .HUABAN-switcher .HUABAN-bar .HUABAN-text-2 {height: 24px; line-height: 24px; position: absolute; left:17px; top: 0; opacity: 0; visibility: hidden; -webkit-transition: all .2s linear; transition: all .2s linear;} #HUABAN_WIDGETS .HUABAN-switcher:hover .HUABAN-bar .HUABAN-text-2 {left: 17px; opacity: 0; visibility: hidden;} #HUABAN_WIDGETS .HUABAN-switcher.HUABAN-on:hover .HUABAN-bar .HUABAN-text-2 {left: 9px; opacity: 1; visibility: visible;} #HUABAN_WIDGETS .HUABAN-header .HUABAN-switcher {position: absolute; right: 0; top: 0;} <!--[if IE 6]>#HUABAN_WIDGETS .HUABAN-red-normal-icon-button, .HUABAN-red-large-icon-button, .HUABAN-red-small-icon-button, .HUABAN-white-normal-icon-button, .HUABAN-white-large-icon-button, .HUABAN-white-small-icon-button { background-image: url({{imgBase}}/widget_icons_ie6.png) <![endif]--></style></div></body></html>
