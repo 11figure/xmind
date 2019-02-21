@@ -4,7 +4,3 @@
 	filemode = false
 	symlinks = false
 	ignorecase = true
-[remote "xmind"]
-	url = https://github.com/11figure/xmind
-	fetch = +refs/heads/*:refs/remotes/xmind/*
-	pushurl = https://github.com/11figure/xmind
